@@ -1,45 +1,45 @@
-package main
+// package main
 
-import "fmt"
+// import "fmt"
 
-func main() {
+// func main() {
 
-	var arr = []int{1, 2, 3, 4, 5, 6}
-	var avv int
+// 	var arr = []int{1, 2, 3, 4, 5, 6}
+// 	var avv int
 
-	avv = 2
+// 	avv = 2
 
-	fmt.Println(binarySearch(arr, avv))
+// 	fmt.Println(binarySearch(arr, avv))
 
-}
+// }
 
-func binarySearch(nums []int, target int) int {
+// func binarySearch(nums []int, target int) int {
 
-	var left int
-	var right int
-	var middle int
+// 	var left int
+// 	var right int
+// 	var middle int
 
-	left = 0
-	right = len(nums) - 1
+// 	left = 0
+// 	right = len(nums) - 1
 
-	for left <= right {
+// 	for left <= right {
 
-		middle = left + (right-left)/2
+// 		middle = left + (right-left)/2
 
-		if nums[middle] == target {
+// 		if nums[middle] == target {
 
-			return middle
+// 			return middle
 
-		} else if target > nums[middle] {
+// 		} else if target > nums[middle] {
 
-			left = middle + 1
+// 			left = middle + 1
 
-		} else {
+// 		} else {
 
-			right = middle - 1
+// 			right = middle - 1
 
-		}
-	}
+// 		}
+// 	}
 
-	return -1
-}
+// 	return -1
+// }
